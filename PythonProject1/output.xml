@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.7 on win32)" generated="2025-09-05T11:34:57.664576" rpa="false" schemaversion="5">
+<suite id="s1" name="PythonProject1" source="C:\Users\khushi.aggarwal\PycharmProjects\PythonProject1">
+<suite id="s1-s1" name="Tests" source="C:\Users\khushi.aggarwal\PycharmProjects\PythonProject1\tests">
+<suite id="s1-s1-s1" name="Day4(AmazonBrokenlinkFlow)" source="C:\Users\khushi.aggarwal\PycharmProjects\PythonProject1\tests\Day4(AmazonBrokenlinkFlow).robot">
+<test id="s1-s1-s1-t1" name="Broken Link Detection For Automation.com" line="6">
+<kw name="Open my browser for detecting broken link" owner="BrokenLink">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-05T11:34:59.082746" level="INFO">Opening browser 'chrome' to base url 'https://practice-automation.com/'.</msg>
+<arg>${siteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-05T11:34:59.082153" elapsed="4.369630"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-05T11:35:03.453208" elapsed="0.062726"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${btn_brokenLinks}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-05T11:35:03.516219" elapsed="0.034049"/>
+</kw>
+<arg>${siteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2025-09-05T11:34:59.080208" elapsed="4.470285"/>
+</kw>
+<kw name="Go To Broken Links Page" owner="BrokenLink">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${btn_brokenLinks}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-05T11:35:03.552296" elapsed="0.321846"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-05T11:35:03.876816" level="INFO">Clicking element '//a[text()='Broken Links']'.</msg>
+<arg>${btn_brokenLinks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-05T11:35:03.875377" elapsed="0.541931"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${lnk_broken}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-05T11:35:04.417724" elapsed="0.041746"/>
+</kw>
+<status status="PASS" start="2025-09-05T11:35:03.551753" elapsed="0.908120"/>
+</kw>
+<kw name="Click Broken Link" owner="BrokenLink">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-05T11:35:04.462668" level="INFO">Clicking element '//a[text()='broken link']'.</msg>
+<arg>${lnk_broken}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-05T11:35:04.462034" elapsed="2.547953"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${validation_txt}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-05T11:35:07.010318" elapsed="0.032250"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-05T11:35:09.044249" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-05T11:35:07.042901" elapsed="2.001739"/>
+</kw>
+<status status="PASS" start="2025-09-05T11:35:04.461202" elapsed="4.583801"/>
+</kw>
+<kw name="Open my browser for detecting broken Image" owner="BrokenLink">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-05T11:35:09.049879" level="INFO">Opening browser 'chrome' to base url 'https://practice-automation.com/'.</msg>
+<arg>${siteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-05T11:35:09.049066" elapsed="2.572013"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-05T11:35:11.621445" elapsed="1.506250"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${btn_brokenImages}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-05T11:35:13.128155" elapsed="0.027672"/>
+</kw>
+<arg>${siteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2025-09-05T11:35:09.047428" elapsed="4.108649"/>
+</kw>
+<kw name="Go To Broken Images Page" owner="BrokenLink">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${btn_brokenImages}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-05T11:35:13.157795" elapsed="0.331156"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-05T11:35:13.489619" level="INFO">Clicking element '//a[text()='Broken Images']'.</msg>
+<arg>${btn_brokenImages}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-05T11:35:13.489242" elapsed="0.582611"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${img_broken}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-05T11:35:14.072199" elapsed="0.029428"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-05T11:35:16.102562" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-05T11:35:14.101881" elapsed="2.000836"/>
+</kw>
+<status status="PASS" start="2025-09-05T11:35:13.157062" elapsed="2.945827"/>
+</kw>
+<status status="PASS" start="2025-09-05T11:34:59.078392" elapsed="17.025424"/>
+</test>
+<status status="PASS" start="2025-09-05T11:34:57.798790" elapsed="18.308145"/>
+</suite>
+<status status="PASS" start="2025-09-05T11:34:57.793513" elapsed="18.316112"/>
+</suite>
+<status status="PASS" start="2025-09-05T11:34:57.668666" elapsed="18.443464"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="PythonProject1" id="s1" pass="1" fail="0" skip="0">PythonProject1</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">PythonProject1.Tests</stat>
+<stat name="Day4(AmazonBrokenlinkFlow)" id="s1-s1-s1" pass="1" fail="0" skip="0">PythonProject1.Tests.Day4(AmazonBrokenlinkFlow)</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,5 @@
+btn_brokenLinks = "//a[text()='Broken Links']"
+lnk_broken = "//a[text()='broken link']"
+validation_txt = "//span[text()='Oops...']"
+btn_brokenImages = "//a[text()='Broken Images']"
+img_broken = "//img[@alt='Broken Image 1']"
