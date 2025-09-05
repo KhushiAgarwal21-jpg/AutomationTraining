@@ -6,8 +6,8 @@ Variables    ../locators/LoginPage.py
 *** Variables ***
 ${Browser}    chrome
 ${siteUrl}    https://www.amazon.in/
-${username}    aggarwalkhushi1721@gmail.com
-${password}    Asdfghjkl1@
+${username}
+${password}
 
 *** Keywords ***
 Open my browser
